@@ -1,8 +1,8 @@
-import pkg from "lottie-react";
+import Lottie from "lottie-react";
 import heroAnimation from "../assets/animations/heroAnimation.json";
 import { motion } from "motion/react";
 
-const Lottie = pkg.default;
+//const Lottie = pkg.default;
 
 const Hero = () => {
   return (

@@ -1,10 +1,10 @@
-import pkg from "lottie-react";
+import Lottie from "lottie-react";
 import ourmissionAnimation from "../assets/animations/ourmissionAnimation.json";
 import { motion } from "motion/react";
 import SectionLayout from './layouts/SectionLayout'
 import { missions } from "../data/missions";
 
-const Lottie = pkg.default;
+//const Lottie = pkg.default;
 
 const OurMission = () => {
   return (

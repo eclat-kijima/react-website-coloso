@@ -1,9 +1,9 @@
-import pkg from "lottie-react";
+import Lottie from "lottie-react";
 import aboutAnimation from "../assets/animations/aboutAnimation.json";
 import { motion } from "motion/react";
 import SectionLayout from "./layouts/SectionLayout";
 
-const Lottie = pkg.default;
+//const Lottie = pkg.default;
 
 function About() {
   return (
