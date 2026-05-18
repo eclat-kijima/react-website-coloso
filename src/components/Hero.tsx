@@ -1,8 +1,5 @@
-import Lottie from "lottie-react";
-import heroAnimation from "../assets/animations/heroAnimation.json";
+import { Player } from "@lottiefiles/react-lottie-player";
 import { motion } from "motion/react";
-
-//const Lottie = pkg.default;
 
 const Hero = () => {
   return (
@@ -32,7 +29,12 @@ const Hero = () => {
                         damping: 15,
                     }}
                     className="md:w-[640px] mx-auto sm:mt-[-100px] mt-[-50px] mb-[-50px]">
-                    <Lottie animationData={heroAnimation} />
+                    <Player
+                        autoplay
+                        loop
+                        src="/animations/heroAnimation.json"
+                        style={{ width: "640px", height: "auto" }}
+                    />
                 </motion.div>
             </div>
         </main>

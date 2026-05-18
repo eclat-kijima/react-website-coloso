@@ -1,9 +1,6 @@
-import Lottie from "lottie-react";
-import aboutAnimation from "../assets/animations/aboutAnimation.json";
+import { Player } from "@lottiefiles/react-lottie-player";
 import { motion } from "motion/react";
 import SectionLayout from "./layouts/SectionLayout";
-
-//const Lottie = pkg.default;
 
 function About() {
   return (
@@ -15,7 +12,12 @@ function About() {
                 transition={{ duration: 0.5, delay: 0.8 }}
                 className="py-2">
                 <div className="md:w-[640px] mx-auto">
-                    <Lottie animationData={aboutAnimation} />
+                    <Player
+                        autoplay
+                        loop
+                        src="/animations/aboutAnimation.json"
+                        style={{ width: "640px", height: "auto" }}
+                    />
                 </div>
             </motion.div>
         )}

@@ -1,5 +1,4 @@
-import Lottie from "lottie-react";
-import ourmissionAnimation from "../assets/animations/ourmissionAnimation.json";
+import { Player } from "@lottiefiles/react-lottie-player";
 import { motion } from "motion/react";
 import SectionLayout from './layouts/SectionLayout'
 import { missions } from "../data/missions";
@@ -18,7 +17,12 @@ const OurMission = () => {
                 transition={{ duration: 0.7, delay: 0.5 }}
                 className="md:my-auto md:w-1/2">
                     <div>
-                        <Lottie animationData={ourmissionAnimation} />
+                        <Player
+                            autoplay
+                            loop
+                            src="/animations/ourmissionAnimation.json"
+                            style={{ width: "auto", height: "auto" }}
+                        />
                     </div>
                 </motion.div>
 
